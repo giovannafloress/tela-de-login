@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="estilo/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+<main>
+    <section id="login">
+
+        <div id="foto"></div>
+
+        <div id="forms">
+            <h1>Login</h1>  
+            <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta!</p>
+
+            <form action="login.php" method="post">
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="email" name="email" id="iemail" placeholder="nome@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
+                </div>
+
+                <input type="submit" value="Entrar">
+                <a href="#">Esqueci a senha</a>
+
+            </form>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>

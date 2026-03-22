@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(119, 83, 250);
+    height: 100vh;
+}
+
+/*CONTAINER*/
+section#login {
+    background-color: white;
+    width: 280px;
+    height: 520px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/*IMAGEM*/
+#foto {
+    background: url("../imagem/pexels-john-5993037.jpg") no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+
+/*TEXTO*/
+#forms {
+    padding: 15px;
+    text-align: center;
+}
+
+#forms h1 {
+    margin-bottom: 5px;
+}
+
+#forms p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/*FORM*/
+form {
+    width: 100%;
+}
+
+/*CAMPOS*/
+.campo {
+    display: flex;
+    align-items: center;
+    background-color: rgb(119, 83, 250);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.campo span {
+    color: white;
+    font-size: 1.5em;
+    width: 35px;
+    text-align: center;
+}
+
+.campo input {
+    border: none;
+    outline: none;
+    width: calc(100% - 30px);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/*BOTÃO*/
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+
+    background-color: rgb(36, 0, 168);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+form input[type=submit]:hover {
+    background-color: white;
+    color: rgb(36, 0, 168);
+    border: 2px solid rgb(36, 0, 168);
+}
+
+/*LINK*/
+form a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(36, 0, 168);
+    font-size: 0.9em;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/*RESPONSIVO*/
+@media (min-width: 768px) {
+
+    section#login {
+        width: 750px;
+        height: 400px;
+        display: flex;
+    }
+
+    #foto {
+        width: 50%;
+        height: 100%;
+    }
+
+    #forms {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form {
+        padding: 10px 20px;
+    }
+}
